@@ -1,7 +1,9 @@
 SamplePythonScripts
 ===================
 
-A collection of small snippets in python for doing general purpose activities that we need to do over our machines. python is a very powerful tool for programming in general, you can easily replace shell scripting by scripting in python, and it is platform independant
+A collection of small snippets in python for doing general purpose activities that we need to do over our machines. python is a very powerful tool for programming in general, you can easily replace shell scripting by scripting in python, and it is platform independant.
+
+These are snippets from my graduation research project, since I can not publish my project, I am publishing small portions of the project to give back to the community. And if you want me to write snippets for the problem you are facing then email me, I will publish them as soon as possible.  Enjoy.
 
 List:
 
