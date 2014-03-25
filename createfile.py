@@ -1,3 +1,9 @@
+#!/usr/bin/python
+
+#Author: Suraj Patil
+#Version: 1.0
+#Date: 25th March 2014
+
 import os
 #creates file on the go on the entries of a tuple
 
