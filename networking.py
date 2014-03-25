@@ -1,4 +1,5 @@
-#uses scapy, you need to have scapy installed
+#uses scapy, you need to have scapy installed, gets the MAC address of the IP address you specify by sending and receiving
+#ARP request and response
 
 from scapy.all import *
 ip = raw_input('Enter IP address')
