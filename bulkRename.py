@@ -1,4 +1,5 @@
-#change filenames 
+#change filenames of all files in the given path to something you put there, You can name them in some order,
+# like Photo001, Photo002 etc, of great help when you have a lot of files with contextual names
 import os
 
 path = raw_input('Enter path: ')
