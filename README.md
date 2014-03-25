@@ -11,4 +11,4 @@ List:
 2. networking.py  : some simple scripts to do some amazing stuff over the network, for eg finding MAC address of a client in the network without having physical access to the machine
 3. bulkRename.py: rename multiple files programmatically
 4. hex2int.py: we have a file EtherType, and we convert it to EtherType2
-   ![alt tag]https://qph.is.quoracdn.net/main-qimg-65068a84a7b19b24f438dfb2c3af1baf?convert_to_webp=true
+     ![]https://qph.is.quoracdn.net/main-qimg-65068a84a7b19b24f438dfb2c3af1baf?convert_to_webp=true
