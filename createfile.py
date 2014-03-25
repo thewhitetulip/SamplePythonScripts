@@ -22,11 +22,10 @@ except:
    #will execute if you do not have write permission to the folder
 
 try:
-   for i in ports:
       for i in ports:
          file = open('./'+str(i),'w') #opens the files in write mode, and python creates a file when you open it in wr
          file.close()
          if ask==y:
-			 print "created file "+ str(i)
+	     print "created file "+ str(i)  # you can use args if you want
 except:
    print "Could not create files, please check if you have the appropriate read/write permissions"
