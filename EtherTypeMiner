@@ -1,0 +1,117 @@
+'''http://standards.ieee.org/develop/regauth/ethertype/eth.txt
+this is the etherType text file we are going to use
+there are 43 lines, each one has a hex number, I have to convert
+all those hex numbers into decimal, and then print them back to the text file
+
+NO way I am going to do that by hand. simple, use python!
+'''
+
+
+
+>>> f = open('/root/Desktop/project/EtherType','r')
+>>> lines = f.readlines()
+>>> lines
+['0x0800 \t2048 Internet Protocol version 4 (IPv4)\n', '0x0806 \t2054 Address Resolution Protocol (ARP)\n', '0x0842 \tWake-on-LAN[3]\n', '0x22F3 \tIETF TRILL Protocol\n', '0x6003 \tDECnet Phase IV\n', '0x8035 \tReverse Address Resolution Protocol\n', '0x809B \tAppleTalk (Ethertalk)\n', '0x80F3 \tAppleTalk Address Resolution Protocol (AARP)\n', '0x8100 \tVLAN-tagged frame (IEEE 802.1Q) & Shortest Path Bridging IEEE 802.1aq[4]\n', '0x8137 \tIPX\n', '0x8138 \tIPX\n', '0x8204 \tQNX Qnet\n', '0x86DD \tInternet Protocol Version 6 (IPv6)\n', '0x8808 \tEthernet flow control\n', '0x8809 \tSlow Protocols (IEEE 802.3)\n', '0x8819 \tCobraNet\n', '0x8847 \tMPLS unicast\n', '0x8848 \tMPLS multicast\n', '0x8863 \tPPPoE Discovery Stage\n', '0x8864 \tPPPoE Session Stage\n', '0x8870 \tJumbo Frames[2]\n', '0x887B \tHomePlug 1.0 MME\n', '0x888E \tEAP over LAN (IEEE 802.1X)\n', '0x8892 \tPROFINET Protocol\n', '0x889A \tHyperSCSI (SCSI over Ethernet)\n', '0x88A2 \tATA over Ethernet\n', '0x88A4 \tEtherCAT Protocol\n', '0x88A8 \tProvider Bridging (IEEE 802.1ad) & Shortest Path Bridging IEEE 802.1aq[5]\n', '0x88AB \tEthernet Powerlink[citation needed]\n', '0x88CC \tLink Layer Discovery Protocol (LLDP)\n', '0x88CD \tSERCOS III\n', '0x88E1 \tHomePlug AV MME[citation needed]\n', '0x88E3 \tMedia Redundancy Protocol (IEC62439-2)\n', '0x88E5 \tMAC security (IEEE 802.1AE)\n', '0x88F7 \tPrecision Time Protocol (IEEE 1588)\n', '0x8902 \tIEEE 802.1ag Connectivity Fault Management (CFM) Protocol / ITU-T Recommendation Y.1731 (OAM)\n', '0x8906 \tFibre Channel over Ethernet (FCoE)\n', '0x8914 \tFCoE Initialization Protocol\n', '0x8915 \tRDMA over Converged Ethernet (RoCE)\n', '0x892F \tHigh-availability Seamless Redundancy (HSR)\n', '0x9000 \tEthernet Configuration Testing Protocol[6]\n', '0x9100 \tQ-in-Q\n', '0xCAFE \tVeritas Low Latency Transport (LLT)[7] for Veritas Cluster Server\n']
+
+'''now we get the content of the file in python's tuple, the next thing we want to do is extract only the hex numbers'''
+
+>>> for i in lines:
+...    print i[:7]
+... 
+0x0800 
+0x0806 
+0x0842 
+0x22F3 
+0x6003 
+0x8035 
+0x809B 
+0x80F3 
+0x8100 
+0x8137 
+0x8138 
+0x8204 
+0x86DD 
+0x8808 
+0x8809 
+0x8819 
+0x8847 
+0x8848 
+0x8863 
+0x8864 
+0x8870 
+0x887B 
+0x888E 
+0x8892 
+0x889A 
+0x88A2 
+0x88A4 
+0x88A8 
+0x88AB 
+0x88CC 
+0x88CD 
+0x88E1 
+0x88E3 
+0x88E5 
+0x88F7 
+0x8902 
+0x8906 
+0x8914 
+0x8915 
+0x892F 
+0x9000 
+0x9100 
+0xCAFE 
+#the next thing we need to do is convert them into integer
+
+for i in lines:
+...   print int(str(i[:7]),16)
+... 
+2048
+2054
+2114
+8947
+24579
+32821
+32923
+33011
+33024
+33079
+33080
+33284
+34525
+34824
+34825
+34841
+34887
+34888
+34915
+34916
+34928
+34939
+34958
+34962
+34970
+34978
+34980
+34984
+34987
+35020
+35021
+35041
+35043
+35045
+35063
+35074
+35078
+35092
+35093
+35119
+36864
+37120
+51966
+
+#the next thing we need to do is to write this to our file, remmember in the actual code we have 'printed' the results,
+#in reality we have to save them to python variables to work with them, but it is a good practice to see them first
+#and then do the actual programming
+
+
