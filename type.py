@@ -1,6 +1,7 @@
 from scapy.all import *
 
 def printType(element):
+   i=0
    while i<100:
      try:
        print element.type
