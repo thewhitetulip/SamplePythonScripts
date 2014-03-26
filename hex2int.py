@@ -1,19 +1,26 @@
+#!/usr/bin/python
+
+#Author: Suraj Patil
+#Version: 1.0
+#Date: 26th March 2014
+
 '''
 this file won't execute, you will have to type this all into the python prompt, which is the appropriate way of 
 doing programming, as it allows the programmer to have an interactive output
 
-http://standards.ieee.org/develop/regauth/ethertype/eth.txt
-this is the etherType text file we are going to use
-there are 43 lines, each one has a hex number, I have to convert
-all those hex numbers into decimal, and then print them back to the text file
-
-NO way I am going to do that by hand. simple, use python!
-
-we have to convert the EtherType file to this
+output: 
 0x0800 2048	Internet Protocol version 4 (IPv4)
 0x0806 2054	Address Resolution Protocol (ARP)
 0x0842 2114	Wake-on-LAN[3]
+... any number of entries
 
+input:
+0x0800     Internet Protocol version 4 (IPv4)
+0x0806     Address Resolution Protocol (ARP)
+0x0842     Wake-on-LAN[3]
+...any number of entries
+
+0x0800 = hexadecimal of 2048
 '''
 
 
