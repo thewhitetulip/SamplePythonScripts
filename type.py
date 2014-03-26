@@ -11,7 +11,10 @@ def printType(element):
 
 def main():
 path = raw_input('Enter the path of the pcap file you want to read: ')
-a = rdpcap(path)
+try:
+   a = rdpcap(path)
+except:
+  print 'Error opening the pcap file'
 printType(a)
 
 main() 
