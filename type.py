@@ -7,6 +7,7 @@ def printType(element):
        print element.type
        i+=1
      except:
+       print('%d does not have a type'%i)
        i+=1
 
 def main():
