@@ -17,6 +17,7 @@ try:
   for i in range(len(pkts)):
     if ARP in pkts[i]:  #checks if the packet is an ARP packet or not
      file.write ('%d,%s,%s,%s,%s,%d,%s\n'%( a[i].time, a[i].hwsrc, a[i].psrc, a[i].hwdst, a[i].pdst, a[i].hwtype, a[i].op))
+     print 'file write complete'
      #Timestamp, source MAC address, source IP address, Destination MAC address, Destination IP address
   file.close()
 except:
