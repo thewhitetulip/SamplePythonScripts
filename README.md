@@ -12,3 +12,5 @@ List:
 3. bulkRename.py: rename multiple files programmatically
 4. hex2int.py: we have a file EtherType, and we convert it to EtherType2, link for image: https://qph.is.quoracdn.net/main-qimg-cd53d1dd106f20dd19cff0197fb2ac05?convert_to_webp=true
 5. type.py: We have a pcap file of packet capture, and we have to print the EtherType for each packet, then we use this script to do so
+6. processarp.py: Reads a pcap file into python using scapy and produces a csv file as output in the following format: Timestamp, source MAC address, source IP address, Destination MAC address, Destination IP address
+
