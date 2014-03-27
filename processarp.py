@@ -16,7 +16,7 @@ try:
   pkts = rdpcap(pcap_path)  #inbuilt function of scapy to read pcap files
   for i in range(len(pkts)):
     if ARP in pkts[i]:  #checks if the packet is an ARP packet or not
-     file.write('%d,%s,%s,%s,%s,%d,%s\n'%( pkts[i].time, pkts[i].hwsrc, pkts[i].psrc, pkts[i].hwdst, pkts[i].pdst, pkts[i].hwtype, pkts[i].op))
+     file.write('%d,%s,%s,%s,%s,%d,%s\n'%( pkts[i].time, pkts[i].hwsrc, pkts[i].psrc, pkts[i].hwdst, pkts[i].pdst, pkts[i].op))
      print 'file write complete'
      #Timestamp, source MAC address, source IP address, Destination MAC address, Destination IP address
   file.close()
