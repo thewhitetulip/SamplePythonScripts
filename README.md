@@ -20,3 +20,4 @@ List:
 11. removing_numbers.py: suppose you have a file which starts with numbers, then this script can remove the numbers from the file
 12. tables: generates mathematical tables
 13. generateAllPossibleWords.txt: A step by step tutorial of generating all possible strings from an imput string, this is a session stored from the IDLE
+14. builtinFunctions.py: demo of major builtin functions that are used all the time
