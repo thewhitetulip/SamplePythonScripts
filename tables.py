@@ -29,5 +29,6 @@ try:
 	  for j in range(1,11):
 		f.write( "%3d%s"%(i*j, ' '))
 	  f.write('\n')
+          f.close()
 except:
 	print 'Some error occured'
