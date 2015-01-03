@@ -21,3 +21,4 @@ List:
 12. tables: generates mathematical tables
 13. generateAllPossibleWords.txt: A step by step tutorial of generating all possible strings from an imput string, this is a session stored from the IDLE
 14. builtinFunctions.py: demo of major builtin functions that are used all the time
+15. video.py: takes a path of the folder where there are videos and stores the path in a file and will play a random video when you execute the file, it uses subprocess module to call vlc so you need to have vlc installed
